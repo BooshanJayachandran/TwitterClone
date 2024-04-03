@@ -11,7 +11,7 @@
 #
 # Configure Using Gemfile
 # gem "pg"
-#
+# default values for database configuration, rewrite to override
 default: &default
   adapter: postgresql
   encoding: unicode
