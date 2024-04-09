@@ -87,9 +87,11 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
+#  <<: *default
   database: twitter_clone_production
   username: booshan.jayachandran
-  password: password
+  password: <%= ENV['TWITTER_CLONE_DATABASE_PASSWORD'] %>
+  encoding: unicode
   host: localhost
   adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
