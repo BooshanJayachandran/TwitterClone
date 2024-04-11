@@ -51,6 +51,12 @@ gem "bootstrap-sass"
 
 gem "bcrypt"
 
+gem 'faker'
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
+
+# gem 'error_highlight'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
