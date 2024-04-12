@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{TwitterClone}.git" }
-ruby "3.0.0"
+ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
@@ -53,8 +53,12 @@ gem "bcrypt"
 
 gem 'faker'
 
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
-gem 'bootstrap-will_paginate', '1.0.0'
+gem 'webpack'
+
+gem 'will_paginate', '3.3.1'
+# gem 'will_paginate', '~> 4.0'
+gem 'will_paginate-bootstrap', '~>1.0.0'
+
 
 # gem 'error_highlight'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
